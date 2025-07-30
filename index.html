@@ -304,8 +304,10 @@
 
       doc.setFontSize(18);
       doc.setTextColor("#1f2937");
-      doc.text('Singapore Intercultural School Surabaya MUN 2025 <br> WHO Scoring Matrix', 105, 20, null, null, 'center');
+      doc.text('Singapore Intercultural School Surabaya MUN 2025', 105, 20, null, null, 'center');
+      doc.text('WHO', 105, 20, null, null, 'center');
 
+      
       doc.setFontSize(14);
       doc.setTextColor("#111827");
       doc.text(`Country: ${delegate.country}`, 20, 40);
@@ -351,6 +353,7 @@
       doc.setTextColor(34, 197, 94);
       doc.text('Total:', 25, startY + (criteriaData.length + 2) * lineHeight);
       doc.text(calculateTotal(delegate).toString(), 175, startY + (criteriaData.length + 2) * lineHeight, null, null, 'right');
+      doc.text ('Chair : Lionel, Ignaz', 80, 20, null, null, centre)
 
       doc.save(`MUN_Grading_${delegate.country.replace(/\s+/g, '_')}.pdf`);
     }
