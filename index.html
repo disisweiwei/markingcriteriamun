@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MUN Delegates Grading Criteria</title>
+  <title>SEMARANG REGIONAL MUN 2025 UNESCO</title>
   <script src="https://cdn.tailwindcss.com"></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
@@ -71,17 +71,17 @@
         <table class="min-w-full border border-gray-300 rounded text-left text-sm">
           <thead class="bg-blue-600 text-white">
             <tr>
-              <th class="px-3 py-2 border border-blue-700">#</th>
-              <th class="px-3 py-2 border border-blue-700">Country</th>
-              <th class="px-3 py-2 border border-blue-700">GSL (20)</th>
-              <th class="px-3 py-2 border border-blue-700">Mod Caucus (10)</th>
-              <th class="px-3 py-2 border border-blue-700">POI (5)</th>
-              <th class="px-3 py-2 border border-blue-700">POI Reply (5)</th>
-              <th class="px-3 py-2 border border-blue-700">Documentation (10)</th>
-              <th class="px-3 py-2 border border-blue-700">Lobbying (5)</th>
-              <th class="px-3 py-2 border border-blue-700">Decorum (5)</th>
-              <th class="px-3 py-2 border border-blue-700">Total</th>
-              <th class="px-3 py-2 border border-blue-700">Actions</th>
+              <th class="px-3 py-2 border border-red-700">#</th>
+              <th class="px-3 py-2 border border-red-700">Country</th>
+              <th class="px-3 py-2 border border-red-700">GSL (20)</th>
+              <th class="px-3 py-2 border border-red-700">Mod Caucus (10)</th>
+              <th class="px-3 py-2 border border-red-700">POI (5)</th>
+              <th class="px-3 py-2 border border-red-700">POI Reply (5)</th>
+              <th class="px-3 py-2 border border-red-700">Documentation (10)</th>
+              <th class="px-3 py-2 border border-red-700">Lobbying (5)</th>
+              <th class="px-3 py-2 border border-red-700">Decorum (5)</th>
+              <th class="px-3 py-2 border border-red-700">Total</th>
+              <th class="px-3 py-2 border border-red-700">Actions</th>
             </tr>
           </thead>
           <tbody id="delegatesTableBody" class="bg-white"></tbody>
@@ -304,7 +304,7 @@
 
       doc.setFontSize(18);
       doc.setTextColor("#1f2937");
-      doc.text('Singapore Intercultural School Surabaya MUN 2025', 105, 20, null, null, 'center');
+      doc.text('UNESCO Semarang Regional MUN 2025', 105, 20, null, null, 'center');
 
       doc.setFontSize(14);
       doc.setTextColor("#111827");
@@ -321,7 +321,7 @@
       ];
 
       // Draw table headers
-      doc.setFillColor(34, 197, 94); // Tailwind blue-500 color
+      doc.setFillColor(102, 0, 51); // Tailwind blue-500 color
       doc.setTextColor(255, 255, 255);
       doc.rect(20, startY - 8, 180, 10, 'F');
       doc.text(columns[0].label, 25, startY);
@@ -348,7 +348,7 @@
 
       // Total
       doc.setFontSize(16);
-      doc.setTextColor(34, 197, 94);
+      doc.setTextColor(102, 0, 51);
       doc.text('Total:', 25, startY + (criteriaData.length + 2) * lineHeight);
       doc.text(calculateTotal(delegate).toString(), 175, startY + (criteriaData.length + 2) * lineHeight, null, null, 'right');
 
